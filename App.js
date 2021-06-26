@@ -52,7 +52,7 @@ const Section = ({children, title}): Node => {
   );
 };
 
-import Test from './src/Test'
+import Protocolos from './src/Protolocos';
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -64,7 +64,7 @@ const App: () => Node = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Test />
+      <Protocolos />
     </SafeAreaView>
   );
 };
